@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="frontend.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="tableDiv">
+    <div class="heading">
+      <h1>Transaction Dashboard</h1>
+    </div>
+    <div class="dropDiv">
+        <form >
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 400px;">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <select id="monthDropdown">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </form>
+    </div>
+      <table class="table table-bordered">
+          <thead>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col">Image</th>
+          </thead>
+        <tbody class="datafilled">
+        </tbody>
+      </table>
+  </div>
+  <div class="stats">
+  </div>
+  
+  <div class="chart-container">
+    <h1>BarChart analysis</h1>
+    <canvas id="priceRangeChart"></canvas>
+  </div>
+
+  <script src="frontend.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

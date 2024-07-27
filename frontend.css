@@ -1,0 +1,77 @@
+.tableDiv{
+    width:100vw;
+    height:220vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+body{
+    background-color: rgb(194, 227, 238);
+}
+.table{
+    width:80%;
+    height:70%;
+    border: 2px solid black;
+    position: absolute;
+    top:500px;
+
+}
+.dropDiv{
+    width:80%;
+    height:15%;
+}
+.dropDiv form{
+    display: flex;
+    gap :10px;
+    position: absolute;
+    top:350px;
+}
+.heading{
+    border-radius: 50%;
+    width:300px;
+    height:15%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top:10px;
+    font-size: 2rem;
+    background-color: white;
+}
+.heading h1{
+    text-align: center;
+}
+.stats{
+    width: 40%;
+    height:auto;
+    position: relative;
+    left: 150px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.data{
+    background-color: white;
+    padding: 40px;
+    padding-left: 5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.vals{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-container {
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    left:10px;
+  }
