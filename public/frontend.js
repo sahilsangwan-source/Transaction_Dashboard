@@ -14,7 +14,7 @@ let priceRangeChart;
 const getData = async () => {
   try {
     const response = await fetch(
-      `http://localhost:3000/api/combined-data?month=${selectedMonth}&search=${search}`
+      `https://transaction-dashboard-9k8p.onrender.com/api/combined-data?month=${selectedMonth}&search=${search}`
     );
     const data = await response.json();
     return data;
